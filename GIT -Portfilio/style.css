@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.name{
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  text-align: right;
+  color: rgb(4, 12, 57);
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.name h1 {
+  font-size: 40px;          
+  margin: 0;
+}
+
+.name h2 {
+  font-size: 30px;          
+  margin: -25px 0 0 95px;   
+}
+
+.profile img{
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 100%;
+  border: 2px solid #333;
+  margin-left: auto;
+}
+
+.navbar {
+  background: linear-gradient(-45deg,rgb(250, 249, 249),darkgrey);
+  padding: 15px 25px;
+  radius: 6%;
+  display: flex;
+  height: 120%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.options{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+  flex-direction: row;
+  font: bold;
+  font-size: 1.2rem;
+}
+
+.options a{
+  color: rgb(82, 80, 80);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.options a:hover {
+  color: rgb(4, 12, 57);      
+}
+
+.main{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.Projects{
+    font-family: "Coming Soon",cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    align-self: center;
+}
+
+.Problems{
+    font-family: "Coming Soon",cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    align-self: center;
+}
+
+.footer{
+    display: flex;
+    background: rgb(226, 226, 226);
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 6%;
+}
+
+
+.About{
+    font-family: "Comic Relief", system-ui;
+    font-size: 1.4rem;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+}
+
+.Contact{
+    font-family: "Comic Relief", system-ui;
+    font-size: 1.4rem;
+    text-align: center;
+    flex: 1;
+}
+
+
+
+.About p{
+    font-style: oblique;
+    font-size: 1.1rem;
+    line-height: 1.5;     
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Linkdin {      
+    border-radius: 50%;   
+}
+.instagram{
+  border-radius: 30%;
+}
+
+.Contact p{
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+.Contact a{
+  color: rgb(16, 62, 127);
+  font-size: medium;
+  text-decoration: none;
+}
+
+.Contact a:hover{
+  color:dimgray;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+@media (max-width: 992px) {
+  .name h1 { font-size: 2rem; }
+  .name h2 { font-size: 1.5rem; margin: -10px 0 0 50px; }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    text-align: center; 
+  }
+  .options {
+    flex-direction: row;
+    align-self: l;
+
+  }
+  
+
+  .profile img {
+    margin: 0 auto;
+    width: 80px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .About p {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .name h1 { font-size: 1.8rem; }
+  .name h2 { font-size: 1.2rem; margin: -8px 0 0 40px; }
+  .options a { font-size: 0.9rem; }
+  .Projects, .Problems { font-size: 1.2rem; }
+}
